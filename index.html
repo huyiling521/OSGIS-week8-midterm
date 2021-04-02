@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+
+<!-- Left Panel -->
+ <div id="sidebar">
+  <div id = "sidebar-text">
+    <h1 id = "title"></h1>
+    <p id = "content" ></p>
+  </div>
+  </br>
+  </br>
+  <div id="sidebar-below">
+    <button id="start"> START </button>
+    <button id="back" style="display:none"> BACK HOME </button>
+  </br>
+  </br>
+  </br>
+  </br>
+    <button id="prev" style="display:none"> Previous </button>
+    <button id="next" style="display:none"> Next </button>
+  </div>
+ </div>
+
+<!-- Map -->
+<div id="map" class="map" style="visibility:hidden"></div>
+
+  <!-- Javascript Imports -->
+  <script src="js/jquery-2.2.0.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
