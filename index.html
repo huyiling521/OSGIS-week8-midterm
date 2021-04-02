@@ -14,12 +14,32 @@
  <div id="sidebar">
   <div id = "sidebar-text">
     <h1 id = "title"></h1>
-    <p id = "content" ></p>
+    <p id = "content" style="width:320px; font-size:14px"></p>
+    <div class="inputgroup">
+      <label for="str" id="labelForStr" style="display:none">Time Filter</label>
+      <input id="str" type="text" style="display:none; width:150px; left: 50px;" >
+    </div>
+
+    <div class="inputgroup">
+      <label for="sel" id="labelForSel" style="display:none">Category Filter</label>
+      <select id="sel" type="text" style="display:none" >
+        <option value="All">All</option>
+        <option value="cultural">Cultural</option>
+        <option value="natural">Natural</option>
+        <option value="mixed">Mixed</option>
+      </select>
+
   </div>
   </br>
   </br>
   <div id="sidebar-below">
     <button id="start"> START </button>
+    <button id="bycontinent" style="display:none"> View by Continent </button>
+  </br></br>
+    <button id="byfree" style="display:none"> View Freely </button>
+  </br></br>
+    <button id="bysearch" style="display:none"> Search </button>
+  </br></br></br></br>
     <button id="back" style="display:none"> BACK HOME </button>
   </br>
   </br>
@@ -32,7 +52,7 @@
 
 <!-- Map -->
 <div id="map" class="map" style="visibility:hidden"></div>
-
+<img id="img" class="img" src="https://www.intrepidtravel.com/adventures/wp-content/uploads/2018/01/Intrepid-Travel-China_Beijing_family_beautiful_view_great_wall.jpg">
   <!-- Javascript Imports -->
   <script src="js/jquery-2.2.0.js"></script>
   <script src="js/underscore.js"></script>
