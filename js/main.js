@@ -222,6 +222,10 @@ $('#back').click(function(){
 $('#bycontinent').click(function(){
   document.getElementById("prev").style.display="";
   document.getElementById("next").style.display="";
+  document.getElementById("str").style.display="none";
+  document.getElementById("sel").style.display="none";
+  document.getElementById("labelForSel").style.display="none";
+  document.getElementById("labelForStr").style.display="none";
   if (currentPage == 0 || currentPage == 1) {
     $('#prev').prop("disabled", true)
   } else {
